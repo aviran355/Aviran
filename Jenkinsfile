@@ -1,5 +1,4 @@
-node {
-    // clone, build, run, curl, delete container, docker push 
+node { 
     stage("clone"){
         git branch: 'main', url: "https://github.com/aviran355/top-spring-boot-docker.git"
     }
