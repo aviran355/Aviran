@@ -1,3 +1,4 @@
+properties([githubProjectProperty(displayName: '', projectUrlStr: 'https://github.com/aviran355/Shared.git/'), pipelineTriggers([pollSCM('* * * * *')])])
 node { 
     stage("clone"){
         git branch: 'main', url: "https://github.com/aviran355/top-spring-boot-docker.git"
